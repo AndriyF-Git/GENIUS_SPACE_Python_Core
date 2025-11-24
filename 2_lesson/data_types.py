@@ -1,35 +1,24 @@
-int = 5
-print(type(int))
-
-num_1 = 5
-print(type(num_1))
-
-num_2 = 3.14
-print(type(num_2))
-
-string = "hello"
-print(type(string))
-
-check = True
-print(type(check))
-
-lst = ["hello", "my", "name", "is", "Tom"]
-print(type(lst))
-
+text = "string"
+number = 1
+number_float = 1.1
+boolean = True
+lst = [1, 2, 3]
 tpl = (1, 2, 3)
-print(type(tpl))
+dct = {
+    "Name": "John",
+    "Age": 39,
+    "Surname": "Marston", }
 
-dct = {"name": "John", "age": 23}
-print(type(dct))
-
-set_ex = {1, 2, 3}
-print(type(set_ex))
-
-none_var = None
-print(type(none_var))
+print(f"Type of text variable", type(text).__name__)
+print(f"Type of number variable", type(number).__name__)
+print(f"Type of number_float variable", type(number_float).__name__)
+print(f"Type of list variable", type(lst).__name__)
+print(f"Type of tuple variable", type(tpl).__name__)
+print(f"Type of dict variable", type(dct).__name__)
+print(f"Type of None", type(None).__name__)
 
 class Person:
     pass
 
 a = Person()
-print(type(a))
+print(f"Type of a variable",type(a).__name__)

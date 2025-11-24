@@ -1,59 +1,29 @@
-# Funcs for int
-num_1 = "1"
-print(type(num_1))
+num_str = 125
+num_str = str(num_str)
+print(f"Type of variable num_str is {type(num_str).__name__}")
 
-num_1 = int(num_1)
-print(type(num_1))
+message = 'Hi, my name is Python'
+print(f"Modified message is {message.replace('y', '0').replace('i', '1')}")
 
-num_1 = float(num_1)
-print(type(num_1))
 
-# Funcs for string
-string = "hello world!"
-print(len(string))
+split_test = 'This is a split test'
+print(f'Split message  {split_test.split()}')
 
-string = string.upper()
-print(string)
+string_join ='This is a string join test'
+print(f'string_join length {len(string_join)}')
 
-string = string.lower()
-print(string)
+list_append = [1, 2, 3]
+list_append.append(4)
+list_append.append(5)
+print(f'list_append  {list_append}')
+print(f'list_append length is {len(list_append)}')
 
-string = string.capitalize()
-print(string)
+list_extend = [4, 5, 6]
+list_extend.extend([7, 8, 9])
+print(f'list_extend  {list_extend}')
+print(f'list_extend element 6 have index {list_extend.index(6)}')
 
-string = string.replace("!", ".")
-print(string)
-
-string = string.split()
-print(string)
-
-string = " ".join(string)
-print(string)
-
-string = string.count("o")
-print(string)
-
-string = 1
-string = str(string)
-print(type(string))
-
-# Funcs for list
-base_list = [1, 2, 3]
-print(len(base_list))
-
-base_list.append(4)
-print(base_list)
-
-base_list.extend([5, 6, 7])
-print(base_list)
-
-print(base_list.index(4))
-
-# Funcs for dict
-base_dict = {"name": "Tom", "age": 40, "high": 180}
-print(base_dict.keys())
-print(base_dict.values())
-print(base_dict.items())
-
-print(base_dict["name"], base_dict.get("name"), base_dict.get("is_animal", "No"))
-print(base_dict["is_animal"])
+dict_test = {'car': 'Toyota', 'price': 4900, 'where': 'EU'}
+print(f'dict_test value of key car is {dict_test.get("car")} and value of key where is {dict_test.get("where")}')
+print(f"all keys in dict_test is {dict_test.keys()}")
+print(f"all items in dict_test is {dict_test.items()}")
